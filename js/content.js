@@ -24,36 +24,50 @@ window.AS_OF = {
    note:   optional extra label, e.g. Chinese state media
 */
 window.SOURCES = {
-  wiki:        { outlet: "Wikipedia", date: "", url: "" },
-  avasant:     { outlet: "Avasant", date: "", url: "" },
+  wiki:        { outlet: "Wikipedia", date: "", url: "https://en.wikipedia.org/wiki/Pax_Silica" },
+  avasant:     { outlet: "Avasant", date: "May 2026", url: "https://avasant.com/report/pax-silica-and-the-philippines-what-the-new-economic-security-zone-means-for-global-supply-chains/" },
   big:         { outlet: "Brussels Institute for Geopolitics", date: "July 2026", url: "" },
   manorama:    { outlet: "Manorama", date: "June 2026", url: "" },
   philstar0810:{ outlet: "Philstar", date: "Aug 10, 2026", url: "" },
   rappler1104: { outlet: "Rappler", date: "Nov 4, 2026", url: "" },
-  members:     { outlet: "Membership figures — source to be confirmed", date: "", url: "" },
+  members:     { outlet: "Qatar and UAE join dates — source to be confirmed", date: "", url: "" },
+  itif:        { outlet: "ITIF (Pax Silica timeline)", date: "", url: "https://itif.org/publications/pax-silica-timeline.md" },
+  manoramayb:  { outlet: "Manorama Yearbook", date: "Feb 21, 2026", url: "https://www.manoramayearbook.in/current-affairs/india/2026/02/21/india-joins-us-led-coalition-pax-silica.html" },
+  thestar0417: { outlet: "The Star (Malaysia)", date: "Apr 17, 2026", url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/04/17/the-philippines-joins-led-us-led-pax-silica-initiative-plans-for-industrial-hub-in-luzon-unveiled" },
+  miningnorway:{ outlet: "Mining.com", date: "May 2026", url: "https://www.mining.com/norway-joins-us-led-pax-silica-supply-chain-push/" },
+  dpa:         { outlet: "Digital Policy Alert", date: "June 2026", url: "https://digitalpolicyalert.org/change/20075" },
+  bhfs:        { outlet: "Brownstein Hyatt Farber Schreck (BHFS)", date: "June 2026", url: "https://www.bhfs.com/insight/state-department-expands-pax-silica-initiative-at-2026-summit/" },
   statedept:   { outlet: "US State Department", date: "April 2026", url: "" },
   inquirer:    { outlet: "Inquirer", date: "", url: "" },
   bworld:      { outlet: "BusinessWorld", date: "", url: "" },
   rappler07:   { outlet: "Rappler", date: "July 2026", url: "" },
-  mb0424:      { outlet: "Manila Bulletin", date: "Apr 24, 2026", url: "" },
+  mb0424:      { outlet: "Manila Bulletin", date: "Apr 24, 2026", url: "https://mb.com.ph/2026/04/24/philippine-us-economic-security-zone-eyes-groundbreaking-before-marcos-steps-down-in-2028" },
   tribune:     { outlet: "Daily Tribune", date: "", url: "" },
-  mb0518:      { outlet: "Manila Bulletin", date: "May 18, 2026", url: "" },
+  mb0518:      { outlet: "Manila Bulletin", date: "May 18, 2026", url: "https://mb.com.ph/2026/05/18/us-wants-american-law-to-govern-new-philippine-ai-hub" },
+  bworldbcda:  { outlet: "BusinessWorld", date: "May 2026", url: "https://www.bworldonline.com/?p=750806" },
   scmp:        { outlet: "SCMP", date: "", url: "" },
   pna:         { outlet: "PNA", date: "July 27, 2026 (SONA)", url: "" },
-  sunstar:     { outlet: "SunStar", date: "", url: "" },
+  sunstar:     { outlet: "SunStar", date: "", url: "https://www.sunstar.com.ph/pampanga/local-news/bcda-says-pax-silica-project-could-generate-over-130000-high-quality-jobs" },
   rappler:     { outlet: "Rappler", date: "", url: "" },
   gma:         { outlet: "GMA", date: "", url: "" },
   bworld1019:  { outlet: "BusinessWorld", date: "Oct 19, 2026", url: "" },
   bworld1104:  { outlet: "BusinessWorld", date: "Nov 4, 2026", url: "" },
   techpil:     { outlet: "Tech Pilipinas", date: "Oct 27, 2026", url: "" },
-  inq07:       { outlet: "Inquirer", date: "July 2026", url: "" },
+  inq07:       { outlet: "Inquirer", date: "July 30, 2026", url: "https://newsinfo.inquirer.net/2274123/pax-silica-brings-promise-but-at-what-cost" },
   map:         { outlet: "Management Association of the Philippines (MAP)", date: "", url: "" },
   manilatimes: { outlet: "Manila Times", date: "", url: "" },
   inq1103:     { outlet: "Inquirer", date: "Nov 3, 2026", url: "" },
-  globaltimes: { outlet: "Global Times", date: "", url: "",
+  scmpheyd:    { outlet: "SCMP (opinion, Richard Heydarian)", date: "June 2026", url: "https://www.scmp.com/opinion/asia-opinion/article/3355350/philippines-bet-shaky-investment-pledges-us-risks-chinas-ire" },
+  globaltimes: { outlet: "Global Times", date: "July 14, 2026", url: "https://www.globaltimes.cn/page/202607/1365956.shtml",
                  note: { en: "Chinese state media", fil: "state media ng China" } },
-  dzrh:        { outlet: "DZRH", date: "Aug 12, 2026", url: "" },
+  dzrh:        { outlet: "DZRH", date: "Aug 12, 2026", url: "https://www.dzrh.com.ph/post/imee-marcos-calls-for-probe-into-alleged-pax-silica-draft-framework" },
   rs:          { outlet: "Responsible Statecraft", date: "", url: "" },
+  interaksyon0730: { outlet: "Interaksyon (Philstar)", date: "July 30, 2026", url: "https://interaksyon.philstar.com/business/2026/07/30/317110/business-group-backs-pax-silica-calls-for-sovereignty-protections/" },
+  gmatulfo:    { outlet: "GMA", date: "", url: "https://www.gmanetwork.com/news/topstories/nation/998183/pax-silica-raffy-tulfo-tarlac/story/" },
+  gmateodoro:  { outlet: "GMA", date: "", url: "https://www.gmanetwork.com/news/topstories/nation/985062/ph-us-pax-silica-hub-not-war-driven-but-for-industrialization-teodoro/story/" },
+  tribune0806: { outlet: "Daily Tribune", date: "Aug 6, 2026", url: "https://tribune.net.ph/2026/08/06/aetas-farmers-in-tarlac-defend-ancestral-domain-and-farmlands-oppose-pax-silica" },
+  rfa0922:     { outlet: "Radio Free Asia", date: "Sept 22, 2026", url: "https://rfa.org/english/southchinasea/2026/09/22/aeta-philippines-pax-silica-tech-hub/" },
+  tribune1026: { outlet: "Daily Tribune", date: "Oct 26, 2026", url: "https://tribune.net.ph/2026/10/26/nup-seeks-creation-of-govt-agency-for-new-clark-city-economic-zone" },
   mt1004:      { outlet: "Manila Times (editorial)", date: "Oct 4, 2026", url: "" },
   tribune1104: { outlet: "Daily Tribune", date: "Nov 4, 2026", url: "" }
 };
@@ -140,8 +154,8 @@ window.UI = {
   },
   members_title: { en: "How membership grew", fil: "Paano dumami ang mga miyembro" },
   members_note: {
-    en: "The list of founding signatories is still being confirmed and is not shown here yet.",
-    fil: "Kinukumpirma pa ang listahan ng mga unang pumirma (founding signatories), kaya hindi pa ito nakalagay dito."
+    en: "Reports differ on the exact founding list, and the official State Department list could not be checked yet. Not every country that joined is shown here.",
+    fil: "Magkakaiba ang ulat tungkol sa eksaktong listahan ng mga unang pumirma, at hindi pa natitingnan ang opisyal na listahan ng State Department. Hindi lahat ng sumaling bansa ay nakalagay dito."
   },
 
   /* 4. philippines */
@@ -267,8 +281,8 @@ window.SIXTY = [
     fil: "Ang <strong>Pax Silica</strong> ay grupo ng mga bansa na pinangungunahan ng United States. Inilunsad ito noong Disyembre 12, 2025. Tutok ito sa buong AI supply chain — mula mineral at enerhiya hanggang chips at AI infrastructure. {{c:wiki,avasant,manorama}}"
   },
   {
-    en: "Countries join by signing a <strong>declaration</strong>. The European Commission said it is <strong>not legally binding</strong>. By June 27, 2026, there were 24 signatories. {{c:big,members}}",
-    fil: "Sumasali ang mga bansa sa pagpirma ng isang <strong>declaration</strong>. Sabi ng European Commission, <strong>hindi ito legally binding</strong> — walang legal na obligasyon. Pagdating ng Hunyo 27, 2026, 24 na ang pumirma. {{c:big,members}}"
+    en: "Countries join by signing a <strong>declaration</strong>. The European Commission said it is <strong>not legally binding</strong>. After the second summit in late June 2026, there were 24 signatories. {{c:big,dpa}}",
+    fil: "Sumasali ang mga bansa sa pagpirma ng isang <strong>declaration</strong>. Sabi ng European Commission, <strong>hindi ito legally binding</strong> — walang legal na obligasyon. Pagkatapos ng ikalawang summit noong huling linggo ng Hunyo 2026, 24 na ang pumirma. {{c:big,dpa}}"
   },
   {
     en: "The US has been open that Pax Silica is meant to counter China's dominance in the AI and semiconductor supply chain. {{c:philstar0810}}",
@@ -279,8 +293,8 @@ window.SIXTY = [
     fil: "Sumali ang Pilipinas noong Abril 16, 2026. Inanunsyo ng US at Pilipinas ang planong 4,000-acre (mga 1,620 ektarya) na industrial hub sa New Clark City, Capas, Tarlac. {{c:statedept,inquirer,bworld}}"
   },
   {
-    en: "The government projects jobs and investment; critics raise concerns about power and water, economic value, sovereignty and transparency. As of November 5, 2026, the PH–US framework agreement is <strong>not yet signed</strong>. {{c:rappler1104,tribune1104}}",
-    fil: "Inaasahan ng gobyerno na magdadala ito ng trabaho at investment. Ang mga kritiko naman ay may alalahanin sa kuryente at tubig, sa tunay na pakinabang sa ekonomiya, sa soberanya, at sa transparency. Hanggang Nobyembre 5, 2026, <strong>hindi pa pirmado</strong> ang framework agreement ng PH at US. {{c:rappler1104,tribune1104}}"
+    en: "The government projects jobs and investment; critics raise concerns about power and water, land, economic value, sovereignty and transparency. As of November 5, 2026, the PH–US framework agreement is <strong>not yet signed</strong>. {{c:rappler1104,tribune1104}}",
+    fil: "Inaasahan ng gobyerno na magdadala ito ng trabaho at investment. Ang mga kritiko naman ay may alalahanin sa kuryente at tubig, sa lupa, sa tunay na pakinabang sa ekonomiya, sa soberanya, at sa transparency. Hanggang Nobyembre 5, 2026, <strong>hindi pa pirmado</strong> ang framework agreement ng PH at US. {{c:rappler1104,tribune1104}}"
   }
 ];
 
@@ -377,13 +391,13 @@ window.WHAT = [
 ];
 
 window.MEMBERS = [
-  { date: { en: "Dec 12, 2025", fil: "Dis 12, 2025" }, en: "Launch with founding signatories", fil: "Paglulunsad kasama ang founding signatories" },
-  { date: { en: "Jan 12, 2026", fil: "Ene 12, 2026" }, en: "Qatar joins", fil: "Sumali ang Qatar" },
-  { date: { en: "Jan 14, 2026", fil: "Ene 14, 2026" }, en: "United Arab Emirates joins", fil: "Sumali ang United Arab Emirates" },
-  { date: { en: "Feb 20, 2026", fil: "Peb 20, 2026" }, en: "India joins", fil: "Sumali ang India" },
-  { date: { en: "Apr 16, 2026", fil: "Abr 16, 2026" }, en: "<strong>Philippines joins — 13th signatory</strong>", fil: "<strong>Sumali ang Pilipinas — ika-13 pumirma</strong>", ph: true },
-  { date: { en: "May 6, 2026", fil: "Mayo 6, 2026" }, en: "Norway joins — 15th signatory", fil: "Sumali ang Norway — ika-15 pumirma" },
-  { date: { en: "June 27, 2026", fil: "Hunyo 27, 2026" }, en: "Second summit adds 10 signatories, including the EU, Germany, the Netherlands, Argentina, Chile and Panama — <strong>24 in total</strong>", fil: "Sa ikalawang summit, 10 ang nadagdag, kasama ang EU, Germany, Netherlands, Argentina, Chile at Panama — <strong>24 lahat-lahat</strong>" }
+  { date: { en: "Dec 12, 2025", fil: "Dis 12, 2025" }, en: "Launch. The ITIF timeline lists seven founding signers: the US, the UK, Japan, South Korea, Singapore, Israel and Australia. Some reports list these without the UK. {{c:itif}}", fil: "Paglulunsad. Pito ang unang pumirma ayon sa ITIF timeline: US, UK, Japan, South Korea, Singapore, Israel at Australia. May mga ulat na hindi isinasama ang UK. {{c:itif}}" },
+  { date: { en: "Jan 12, 2026", fil: "Ene 12, 2026" }, en: "Qatar joins {{c:members}}", fil: "Sumali ang Qatar {{c:members}}" },
+  { date: { en: "Jan 14, 2026", fil: "Ene 14, 2026" }, en: "United Arab Emirates joins {{c:members}}", fil: "Sumali ang United Arab Emirates {{c:members}}" },
+  { date: { en: "Feb 20, 2026", fil: "Peb 20, 2026" }, en: "India joins — 10th signatory {{c:manoramayb}}", fil: "Sumali ang India — ika-10 pumirma {{c:manoramayb}}" },
+  { date: { en: "Apr 16, 2026", fil: "Abr 16, 2026" }, en: "<strong>Philippines joins — 13th signatory</strong> {{c:statedept,thestar0417}}", fil: "<strong>Sumali ang Pilipinas — ika-13 pumirma</strong> {{c:statedept,thestar0417}}", ph: true },
+  { date: { en: "May 6, 2026", fil: "Mayo 6, 2026" }, en: "Norway joins — 15th signatory {{c:miningnorway}}", fil: "Sumali ang Norway — ika-15 pumirma {{c:miningnorway}}" },
+  { date: { en: "June 25–26, 2026", fil: "Hunyo 25–26, 2026" }, en: "Second summit in Washington, D.C. adds 10 signatories: Argentina, Chile, Costa Rica, El Salvador, the EU, Germany, Greece, Kazakhstan, the Netherlands and Panama — <strong>24 in total</strong> {{c:dpa,bhfs}}", fil: "Sa ikalawang summit sa Washington, D.C., 10 ang nadagdag: Argentina, Chile, Costa Rica, El Salvador, EU, Germany, Greece, Kazakhstan, Netherlands at Panama — <strong>24 lahat-lahat</strong> {{c:dpa,bhfs}}" }
 ];
 
 /* ---------- 7. SECTION 4: THE PHILIPPINES ---------- */
@@ -391,8 +405,8 @@ window.PH = {
   join: [
     {
       type: "fact",
-      en: "The Philippines joined Pax Silica on April 16, 2026, as the 13th signatory. The declaration was signed by Ceferino Rodolfo, Undersecretary of the Department of Trade and Industry (DTI) and Managing Head of the Board of Investments (BOI). {{c:statedept,members}}",
-      fil: "Sumali ang Pilipinas sa Pax Silica noong Abril 16, 2026, bilang ika-13 pumirma. Si Ceferino Rodolfo, Undersecretary ng Department of Trade and Industry (DTI) at Managing Head ng Board of Investments (BOI), ang pumirma sa declaration. {{c:statedept,members}}"
+      en: "The Philippines joined Pax Silica on April 16, 2026, as the 13th signatory. The declaration was signed by Ceferino Rodolfo, Undersecretary of the Department of Trade and Industry (DTI) and Managing Head of the Board of Investments (BOI). {{c:statedept,thestar0417}}",
+      fil: "Sumali ang Pilipinas sa Pax Silica noong Abril 16, 2026, bilang ika-13 pumirma. Si Ceferino Rodolfo, Undersecretary ng Department of Trade and Industry (DTI) at Managing Head ng Board of Investments (BOI), ang pumirma sa declaration. {{c:statedept,thestar0417}}"
     },
     {
       type: "claim",
@@ -425,7 +439,7 @@ window.PH = {
     },
     {
       type: "fact",
-      en: "The US reportedly asked for a special legal arrangement. BCDA rejected it, saying “there will be no special arrangement accorded to the US.” {{c:mb0518,scmp}}",
+      en: "The US reportedly asked for a special legal arrangement. BCDA rejected it, saying “there will be no special arrangement accorded to the US.” {{c:mb0518,scmp,bworldbcda}}",
       fil: "Ayon sa ulat, humiling ang US ng espesyal na legal na kaayusan. Tinanggihan ito ng BCDA: “there will be no special arrangement accorded to the US” (walang espesyal na kaayusang ibibigay sa US). {{c:mb0518,scmp}}"
     }
   ],
@@ -461,8 +475,8 @@ window.PH = {
   law: [
     {
       type: "fact",
-      en: "House Bill 11758, filed in October 2026 by National Unity Party (NUP) members led by Deputy Speaker Ronaldo Puno, would create a 1,350-hectare Advanced Industries Zone in New Clark City. {{c:techpil}}",
-      fil: "Ang House Bill 11758, na inihain noong Oktubre 2026 ng mga miyembro ng NUP sa pangunguna ni Deputy Speaker Ronaldo Puno, ay naglalayong lumikha ng 1,350-ektaryang Advanced Industries Zone sa New Clark City. {{c:techpil}}"
+      en: "House Bill 11758, filed in October 2026 by National Unity Party (NUP) members led by Deputy Speaker Ronaldo Puno, would create a 1,350-hectare Advanced Industries Zone in New Clark City. {{c:techpil,tribune1026}}",
+      fil: "Ang House Bill 11758, na inihain noong Oktubre 2026 ng mga miyembro ng NUP sa pangunguna ni Deputy Speaker Ronaldo Puno, ay naglalayong lumikha ng 1,350-ektaryang Advanced Industries Zone sa New Clark City. {{c:techpil,tribune1026}}"
     }
   ]
 };
@@ -488,12 +502,12 @@ window.TIMELINE = [
   { sort: "2026-02-20", cat: "world",
     date: { en: "Feb 20, 2026", fil: "Peb 20, 2026" },
     title: { en: "India joins", fil: "Sumali ang India" },
-    en: "India signs the declaration. {{c:members}}", fil: "Pumirma ang India sa declaration. {{c:members}}" },
+    en: "India signs the declaration as the 10th signatory. {{c:manoramayb}}", fil: "Pumirma ang India sa declaration bilang ika-10. {{c:manoramayb}}" },
   { sort: "2026-04-16", cat: "ph",
     date: { en: "Apr 16, 2026", fil: "Abr 16, 2026" },
     title: { en: "The Philippines joins; New Clark City hub announced", fil: "Sumali ang Pilipinas; inanunsyo ang hub sa New Clark City" },
-    en: "DTI Undersecretary Ceferino Rodolfo signs as the 13th signatory. The US and PH announce plans for a 4,000-acre “AI-Native Industrial Acceleration Hub.” {{c:statedept,members}}",
-    fil: "Pumirma si DTI Undersecretary Ceferino Rodolfo bilang ika-13. Inanunsyo ng US at PH ang planong 4,000-acre na “AI-Native Industrial Acceleration Hub.” {{c:statedept,members}}" },
+    en: "DTI Undersecretary Ceferino Rodolfo signs as the 13th signatory. The US and PH announce plans for a 4,000-acre “AI-Native Industrial Acceleration Hub.” {{c:statedept,thestar0417}}",
+    fil: "Pumirma si DTI Undersecretary Ceferino Rodolfo bilang ika-13. Inanunsyo ng US at PH ang planong 4,000-acre na “AI-Native Industrial Acceleration Hub.” {{c:statedept,thestar0417}}" },
   { sort: "2026-04-24", cat: "ph",
     date: { en: "Reported Apr 24, 2026", fil: "Naiulat Abr 24, 2026" },
     title: { en: "Officials outline the legal framework and lease", fil: "Inilatag ng mga opisyal ang legal framework at lease" },
@@ -502,22 +516,22 @@ window.TIMELINE = [
   { sort: "2026-05-06", cat: "world",
     date: { en: "May 6, 2026", fil: "Mayo 6, 2026" },
     title: { en: "Norway joins as 15th signatory", fil: "Sumali ang Norway bilang ika-15" },
-    en: "Norway signs the declaration. {{c:members}}", fil: "Pumirma ang Norway sa declaration. {{c:members}}" },
+    en: "Norway signs the declaration. {{c:miningnorway}}", fil: "Pumirma ang Norway sa declaration. {{c:miningnorway}}" },
   { sort: "2026-05-18", cat: "ph",
     date: { en: "Reported May 18, 2026", fil: "Naiulat Mayo 18, 2026" },
     title: { en: "BCDA rejects a reported US request for a special legal arrangement", fil: "Tinanggihan ng BCDA ang iniulat na hiling ng US para sa espesyal na legal na kaayusan" },
-    en: "BCDA: “there will be no special arrangement accorded to the US.” {{c:mb0518,scmp}}",
-    fil: "BCDA: “there will be no special arrangement accorded to the US.” {{c:mb0518,scmp}}" },
+    en: "BCDA: “there will be no special arrangement accorded to the US.” {{c:mb0518,scmp,bworldbcda}}",
+    fil: "BCDA: “there will be no special arrangement accorded to the US.” {{c:mb0518,scmp,bworldbcda}}" },
   { sort: "2026-06-01", cat: "world",
     date: { en: "June 2026", fil: "Hunyo 2026" },
     title: { en: "The EU joins; says the declaration is not legally binding", fil: "Sumali ang EU; sinabing hindi legally binding ang declaration" },
     en: "The European Commission says the declaration is not legally binding. {{c:big}}",
     fil: "Sabi ng European Commission, hindi legally binding ang declaration. {{c:big}}" },
-  { sort: "2026-06-27", cat: "world",
-    date: { en: "June 27, 2026", fil: "Hunyo 27, 2026" },
+  { sort: "2026-06-25", cat: "world",
+    date: { en: "June 25–26, 2026", fil: "Hunyo 25–26, 2026" },
     title: { en: "Second summit: 24 signatories", fil: "Ikalawang summit: 24 na ang pumirma" },
-    en: "10 signatories are added, including the EU, Germany, the Netherlands, Argentina, Chile and Panama. {{c:members}}",
-    fil: "10 ang nadagdag, kasama ang EU, Germany, Netherlands, Argentina, Chile at Panama. {{c:members}}" },
+    en: "10 signatories are added in Washington, D.C.: Argentina, Chile, Costa Rica, El Salvador, the EU, Germany, Greece, Kazakhstan, the Netherlands and Panama. {{c:dpa,bhfs}}",
+    fil: "10 ang nadagdag sa Washington, D.C.: Argentina, Chile, Costa Rica, El Salvador, EU, Germany, Greece, Kazakhstan, Netherlands at Panama. {{c:dpa,bhfs}}" },
   { sort: "2026-07-02", cat: "debate",
     date: { en: "July 2026", fil: "Hulyo 2026" },
     title: { en: "Projected power demand reported: 3 GW", fil: "Naiulat ang inaasahang demand sa kuryente: 3 GW" },
@@ -538,6 +552,11 @@ window.TIMELINE = [
     title: { en: "Ambassador Romualdez on processing minerals locally", fil: "Ambassador Romualdez: iproseso dito ang mineral" },
     en: "Romualdez speaks of moving up the value chain and processing minerals like nickel locally. The same report notes the US has been open about countering China. {{c:philstar0810}}",
     fil: "Binanggit ni Romualdez ang pag-akyat sa value chain at pagproseso dito ng mineral tulad ng nickel. Sa parehong ulat, hayag daw ang US na layon nitong kontrahin ang China. {{c:philstar0810}}" },
+  { sort: "2026-08-06", cat: "debate",
+    date: { en: "Reported Aug 6, 2026", fil: "Naiulat Ago 6, 2026" },
+    title: { en: "Aetas and farmers in Tarlac oppose the project", fil: "Mga Aeta at magsasaka sa Tarlac, tutol sa proyekto" },
+    en: "They defend what they describe as their ancestral domain and farmlands. {{c:tribune0806}}",
+    fil: "Ipinagtatanggol nila ang tinatawag nilang lupang ninuno (ancestral domain) at sakahan. {{c:tribune0806}}" },
   { sort: "2026-08-12", cat: "debate",
     date: { en: "Aug 12, 2026", fil: "Ago 12, 2026" },
     title: { en: "Sen. Imee Marcos calls for a probe", fil: "Sen. Imee Marcos, nanawagan ng imbestigasyon" },
@@ -629,9 +648,12 @@ window.THEMES = [
         fil: "Mananatili ang mga pasilidad sa buildable zones (mga 3,000+ sa 6,000+ ektarya). Bibigyan ng pabahay at tulong pinansyal ang mga apektadong residente at Indigenous Peoples. {{c:bworld1104}}" }
     ],
     con: [
-      { empty: true,
-        en: "Our sources do not yet include a specific, attributed statement from critics on land and relocation. This will be updated if one is reported. See “Questions to watch.”",
-        fil: "Wala pa sa aming mga source ang tiyak at naka-attribute na pahayag ng mga kritiko tungkol sa lupa at relokasyon. Ia-update ito kapag may naiulat. Tingnan ang “Mga tanong na dapat abangan.”" }
+      { who: { en: "Aeta community members and farmers in Capas, Tarlac", fil: "Mga Aeta at magsasaka sa Capas, Tarlac" },
+        en: "Oppose the project, defending what they describe as their ancestral domain and farmlands. {{c:tribune0806}}",
+        fil: "Tutol sa proyekto, at ipinagtatanggol ang tinatawag nilang lupang ninuno (ancestral domain) at mga sakahan. {{c:tribune0806}}" },
+      { who: { en: "Residents interviewed by Radio Free Asia", fil: "Mga residenteng nakapanayam ng Radio Free Asia" },
+        en: "Say the hub will force them off their ancestral land. {{c:rfa0922}}",
+        fil: "Sabi nila, mapapaalis sila sa kanilang lupang ninuno dahil sa hub. {{c:rfa0922}}" }
     ]
   },
   {
@@ -678,11 +700,11 @@ window.THEMES = [
     ],
     pro: [
       { who: { en: "Defense Secretary Gilberto Teodoro", fil: "Defense Secretary Gilberto Teodoro" },
-        en: "Calls it “a manufacturing and high-technology initiative,” not a military framework. {{c:avasant}}",
-        fil: "Tinawag itong “a manufacturing and high-technology initiative” (inisyatiba sa manufacturing at high-tech), hindi military framework. {{c:avasant}}" },
+        en: "Calls it “a manufacturing and high-technology initiative,” not a military framework. {{c:avasant,gmateodoro}}",
+        fil: "Tinawag itong “a manufacturing and high-technology initiative” (inisyatiba sa manufacturing at high-tech), hindi military framework. {{c:avasant,gmateodoro}}" },
       { who: { en: "BCDA", fil: "BCDA" },
-        en: "Rejected a reported US request for a special legal arrangement: “there will be no special arrangement accorded to the US.” {{c:mb0518,scmp}}",
-        fil: "Tinanggihan ang iniulat na hiling ng US para sa espesyal na legal na kaayusan: “there will be no special arrangement accorded to the US.” {{c:mb0518,scmp}}" },
+        en: "Rejected a reported US request for a special legal arrangement: “there will be no special arrangement accorded to the US.” {{c:mb0518,scmp,bworldbcda}}",
+        fil: "Tinanggihan ang iniulat na hiling ng US para sa espesyal na legal na kaayusan: “there will be no special arrangement accorded to the US.” {{c:mb0518,scmp,bworldbcda}}" },
       { who: { en: "Officials", fil: "Mga opisyal" },
         en: "Philippine laws apply, and BCDA keeps ownership of the land. {{c:mb0424,avasant,tribune}}",
         fil: "Batas ng Pilipinas ang susundin, at BCDA pa rin ang may-ari ng lupa. {{c:mb0424,avasant,tribune}}" }
@@ -691,9 +713,9 @@ window.THEMES = [
       { who: { en: "KMP (farmers' group)", fil: "KMP (grupo ng mga magsasaka)" },
         en: "Calls it a “sellout” and frames it within concerns about militarization. {{c:rappler}}",
         fil: "Tinawag itong “sellout” (pagbebenta ng bayan) at iniuugnay sa alalahanin tungkol sa militarisasyon. {{c:rappler}}" },
-      { who: { en: "Analyst Richard Heydarian, as cited by Global Times (Chinese state media)", fil: "Analyst na si Richard Heydarian, ayon sa Global Times (state media ng China)" },
-        en: "Argued it rests on speculative promises and risks riling China. {{c:globaltimes}}",
-        fil: "Sinabing nakasandal ito sa mga pangakong haka-haka lang at puwedeng ikagalit ng China. {{c:globaltimes}}" },
+      { who: { en: "Analyst Richard Heydarian (SCMP opinion piece, also cited by Global Times — Chinese state media)", fil: "Analyst na si Richard Heydarian (opinion piece sa SCMP, binanggit din ng Global Times — state media ng China)" },
+        en: "Argued it rests on speculative promises and risks riling China. {{c:scmpheyd,globaltimes}}",
+        fil: "Sinabing nakasandal ito sa mga pangakong haka-haka lang at puwedeng ikagalit ng China. {{c:scmpheyd,globaltimes}}" },
       { who: { en: "Analyst Dan Steinbock", fil: "Analyst na si Dan Steinbock" },
         en: "Called it a potential “risk multiplier.” {{c:avasant}}",
         fil: "Tinawag itong posibleng “risk multiplier” (nagpaparami ng panganib). {{c:avasant}}" },
@@ -716,15 +738,15 @@ window.THEMES = [
         fil: "Tatakbo ang proyekto sa ilalim ng mga umiiral na batas: RA 7227, RA 7916, RA 12066 (CREATE MORE) at ang Investors' Lease Act. {{c:mb0424,avasant,tribune}}" },
       { who: { en: "NUP members led by Deputy Speaker Ronaldo Puno", fil: "Mga miyembro ng NUP sa pangunguna ni Deputy Speaker Ronaldo Puno" },
         en: "Filed House Bill 11758 to create a 1,350-hectare Advanced Industries Zone in New Clark City by law. {{c:techpil}}",
-        fil: "Naghain ng House Bill 11758 para lumikha, sa pamamagitan ng batas, ng 1,350-ektaryang Advanced Industries Zone sa New Clark City. {{c:techpil}}" }
+        fil: "Naghain ng House Bill 11758 para lumikha, sa pamamagitan ng batas, ng 1,350-ektaryang Advanced Industries Zone sa New Clark City. {{c:techpil,tribune1026}}" }
     ],
     con: [
       { who: { en: "Senator Imee Marcos", fil: "Senador Imee Marcos" },
         en: "Called for a probe into an alleged draft framework. {{c:dzrh}}",
         fil: "Nanawagan ng imbestigasyon sa isang umano'y draft na framework. {{c:dzrh}}" },
       { who: { en: "Senator Raffy Tulfo", fil: "Senador Raffy Tulfo" },
-        en: "Questioned the government's capacity to regulate foreign projects. {{c:rs}}",
-        fil: "Kinuwestiyon ang kakayahan ng gobyerno na i-regulate ang mga proyektong dayuhan. {{c:rs}}" }
+        en: "Questioned the government's capacity to regulate foreign projects. {{c:rs,gmatulfo}}",
+        fil: "Kinuwestiyon ang kakayahan ng gobyerno na i-regulate ang mga proyektong dayuhan. {{c:rs,gmatulfo}}" }
     ]
   }
 ];
@@ -732,8 +754,8 @@ window.THEMES = [
 /* ---------- 10. SECTION 8: MIDDLE GROUND ---------- */
 window.MIDDLE = [
   { who: { en: "Management Association of the Philippines (MAP)", fil: "Management Association of the Philippines (MAP)" },
-    en: "Backs a “Proceed, but Protected” approach. {{c:rs}}",
-    fil: "Sumusuporta sa “Proceed, but Protected” — ituloy, pero may proteksyon. {{c:rs}}" },
+    en: "Backs a “Proceed, but Protected” approach. {{c:rs,interaksyon0730}}",
+    fil: "Sumusuporta sa “Proceed, but Protected” — ituloy, pero may proteksyon. {{c:rs,interaksyon0730}}" },
   { who: { en: "Economist Cielo Magno", fil: "Ekonomistang si Cielo Magno" },
     en: "Proposes conditional participation — taking part only under set conditions. {{c:inquirer}}",
     fil: "Nagmumungkahi ng conditional participation — sumali lang kung may malinaw na kondisyon. {{c:inquirer}}" },
@@ -800,7 +822,7 @@ window.QUIZ = [
     choices: [
       { en: "December 12, 2025", fil: "Disyembre 12, 2025" },
       { en: "April 16, 2026", fil: "Abril 16, 2026" },
-      { en: "June 27, 2026", fil: "Hunyo 27, 2026" },
+      { en: "May 6, 2026", fil: "Mayo 6, 2026" },
       { en: "November 16, 2026", fil: "Nobyembre 16, 2026" }
     ], answer: 0,
     why: { en: "It launched at the inaugural Pax Silica Summit in Washington, D.C. April 16, 2026 is when the Philippines joined. {{c:wiki,avasant}}",
