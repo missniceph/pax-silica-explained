@@ -28,7 +28,9 @@ window.SOURCES = {
   avasant:     { outlet: "Avasant", date: "May 2026", url: "https://avasant.com/report/pax-silica-and-the-philippines-what-the-new-economic-security-zone-means-for-global-supply-chains/" },
   big:         { outlet: "Brussels Institute for Geopolitics", date: "July 2026", url: "" },
   manorama:    { outlet: "Manorama", date: "June 2026", url: "" },
-  philstar0810:{ outlet: "Philstar", date: "Aug 10, 2026", url: "" },
+  philstar0810:{ outlet: "Philstar", date: "Aug 10, 2026", url: "https://www.philstar.com/business/2026/08/10/2548329/china-g" },
+  context0723: { outlet: "Context.ph", date: "July 23, 2026", url: "https://context.ph/2026/07/23/pax-silica-hub-targets-usd70b-investments-jobs/" },
+  mapstatement:{ outlet: "MAP statement on Pax Silica", date: "July 30, 2026", url: "https://map.org.ph/wp-content/uploads/2026/07/July-30-2026-MAP-Statement-on-Pax-Silica.pdf" },
   rappler1104: { outlet: "Rappler", date: "Nov 4, 2026", url: "" },
   members:     { outlet: "Qatar and UAE join dates — source to be confirmed", date: "", url: "" },
   itif:        { outlet: "ITIF (Pax Silica timeline)", date: "", url: "https://itif.org/publications/pax-silica-timeline.md" },
@@ -446,13 +448,13 @@ window.PH = {
   benefits: [
     {
       type: "projection",
-      en: "President Marcos said in his State of the Nation Address (July 27, 2026) that the hub could create up to <strong>190,000 jobs</strong>. BCDA had earlier cited 100,000+ and 130,000+. {{c:pna,tribune,sunstar}}",
-      fil: "Sabi ni Pangulong Marcos sa kanyang SONA (Hulyo 27, 2026), puwedeng lumikha ang hub ng hanggang <strong>190,000 trabaho</strong>. Bago nito, 100,000+ at 130,000+ ang binanggit ng BCDA. {{c:pna,tribune,sunstar}}"
+      en: "Up to <strong>190,000 jobs</strong>: the figure cited in reports of President Marcos's State of the Nation Address (July 27, 2026), and the top of BCDA's projected range of 130,000 to 190,000 direct jobs. BCDA had earlier cited 100,000+ and 130,000+. {{c:pna,context0723,tribune,sunstar}}",
+      fil: "Hanggang <strong>190,000 trabaho</strong>: ito ang bilang na binanggit sa mga ulat tungkol sa SONA ni Pangulong Marcos (Hulyo 27, 2026), at ito rin ang pinakamataas sa tantiya ng BCDA na 130,000 hanggang 190,000 direktang trabaho. Bago nito, 100,000+ at 130,000+ ang binanggit ng BCDA. {{c:pna,context0723,tribune,sunstar}}"
     },
     {
       type: "projection",
-      en: "The target is <strong>$70 billion</strong> in investments. {{c:rappler}}",
-      fil: "Ang target ay <strong>$70 bilyon</strong> na investment. {{c:rappler}}"
+      en: "The target is <strong>$70 billion</strong> in investments. {{c:rappler,context0723}}",
+      fil: "Ang target ay <strong>$70 bilyon</strong> na investment. {{c:rappler,context0723}}"
     },
     {
       type: "claim",
@@ -545,8 +547,8 @@ window.TIMELINE = [
   { sort: "2026-07-27", cat: "ph",
     date: { en: "July 27, 2026", fil: "Hulyo 27, 2026" },
     title: { en: "SONA: up to 190,000 jobs projected", fil: "SONA: hanggang 190,000 trabaho ang inaasahan" },
-    en: "President Marcos cites up to 190,000 jobs — a projection. {{c:pna}}",
-    fil: "Binanggit ni Pangulong Marcos ang hanggang 190,000 trabaho — isang hula/target. {{c:pna}}" },
+    en: "President Marcos promotes the hub as a source of jobs; reports cite up to 190,000 — a projection that matches the top of BCDA's range. {{c:pna,context0723}}",
+    fil: "Ipinakilala ni Pangulong Marcos ang hub bilang mapagkukunan ng trabaho; ayon sa mga ulat, hanggang 190,000 — isang hula/target na tugma sa pinakamataas na tantiya ng BCDA. {{c:pna,context0723}}" },
   { sort: "2026-08-10", cat: "ph",
     date: { en: "Aug 10, 2026", fil: "Ago 10, 2026" },
     title: { en: "Ambassador Romualdez on processing minerals locally", fil: "Ambassador Romualdez: iproseso dito ang mineral" },
@@ -666,11 +668,11 @@ window.THEMES = [
     ],
     pro: [
       { who: { en: "President Marcos; BCDA", fil: "Pangulong Marcos; BCDA" }, type: "projection",
-        en: "Up to 190,000 jobs (SONA, July 27, 2026); BCDA earlier cited 100,000+ and 130,000+. These are projections. {{c:pna,tribune,sunstar}}",
-        fil: "Hanggang 190,000 trabaho (SONA, Hulyo 27, 2026); 100,000+ at 130,000+ ang naunang binanggit ng BCDA. Mga hula/target ito. {{c:pna,tribune,sunstar}}" },
+        en: "Up to 190,000 jobs (cited in SONA reports, July 27, 2026; BCDA projects 130,000 to 190,000 direct jobs). BCDA earlier cited 100,000+ and 130,000+. These are projections. {{c:pna,context0723,tribune,sunstar}}",
+        fil: "Hanggang 190,000 trabaho (binanggit sa mga ulat tungkol sa SONA, Hulyo 27, 2026; tantiya ng BCDA: 130,000 hanggang 190,000 direktang trabaho). 100,000+ at 130,000+ ang naunang binanggit ng BCDA. Mga hula/target ito. {{c:pna,context0723,tribune,sunstar}}" },
       { who: { en: "Government", fil: "Gobyerno" }, type: "projection",
-        en: "A target of $70 billion in investments. {{c:rappler}}",
-        fil: "Target na $70 bilyong investment. {{c:rappler}}" },
+        en: "A target of $70 billion in investments. {{c:rappler,context0723}}",
+        fil: "Target na $70 bilyong investment. {{c:rappler,context0723}}" },
       { who: { en: "Ambassador Romualdez; DTI's Rodolfo", fil: "Ambassador Romualdez; si Rodolfo ng DTI" },
         en: "It can move the Philippines up the value chain — processing critical minerals like nickel locally instead of exporting raw ore. {{c:philstar0810,gma}}",
         fil: "Puwede nitong paakyatin ang Pilipinas sa value chain — iproseso dito ang critical minerals tulad ng nickel sa halip na i-export ang hilaw na ore. {{c:philstar0810,gma}}" },
@@ -754,8 +756,8 @@ window.THEMES = [
 /* ---------- 10. SECTION 8: MIDDLE GROUND ---------- */
 window.MIDDLE = [
   { who: { en: "Management Association of the Philippines (MAP)", fil: "Management Association of the Philippines (MAP)" },
-    en: "Backs a “Proceed, but Protected” approach. {{c:rs,interaksyon0730}}",
-    fil: "Sumusuporta sa “Proceed, but Protected” — ituloy, pero may proteksyon. {{c:rs,interaksyon0730}}" },
+    en: "Backs a “Proceed, but Protected” approach. {{c:mapstatement,rs,interaksyon0730}}",
+    fil: "Sumusuporta sa “Proceed, but Protected” — ituloy, pero may proteksyon. {{c:mapstatement,rs,interaksyon0730}}" },
   { who: { en: "Economist Cielo Magno", fil: "Ekonomistang si Cielo Magno" },
     en: "Proposes conditional participation — taking part only under set conditions. {{c:inquirer}}",
     fil: "Nagmumungkahi ng conditional participation — sumali lang kung may malinaw na kondisyon. {{c:inquirer}}" },

@@ -132,15 +132,17 @@ Last checked November 5, 2026, using web search only. The State Department, Wiki
 - **Membership sources**: India (10th, Manorama Yearbook), the Philippines (13th, The Star), Norway (15th, Mining.com) and the June summit now have sources. Qatar and UAE dates still need one.
 - **Land and communities, critics' side**: now filled with Aeta and farmer opposition (Daily Tribune, Aug 6, 2026) and residents interviewed by Radio Free Asia (Sept 22, 2026).
 - **Heydarian**: the argument first appeared in his own SCMP opinion piece (June 2026); Global Times (July 14, 2026) cited it. Both are now cited.
+- **More links added (Nov 5)**: Philstar (Aug 10), Context.ph (July 23) for the $70 billion target and the job range, and MAP's own July 30 statement for “Proceed, but Protected”.
 - **Dates and links added**: Avasant (May 2026), Global Times (July 14, 2026), Inquirer energy article (July 30, 2026), and links for Manila Bulletin (Apr 24, May 18), DZRH, SunStar, Wikipedia. Extra supporting links were added for Teodoro (GMA), Tulfo (GMA), MAP (Interaksyon, July 30, 2026), BCDA's rejection of a special arrangement (BusinessWorld) and HB 11758 (Daily Tribune, Oct 26, 2026).
 
 ### Still open
 
 1. **Signatory count**: Norway was 15th; 10 more in June would make 25, but reports say 24. Later reports also mention Italy (July 31, 2026, called the 25th) and Paraguay (Oct 23, 2026). These are **not yet on the site** — confirm against state.gov/pax-silica before adding.
-2. **190,000 jobs**: the fact base credits this to President Marcos's SONA via PNA. Search results instead attribute a 130,000–190,000 range to BCDA, and no PNA article was found. Please check the PNA report or the SONA transcript.
+2. **190,000 jobs** — *partly resolved.* BCDA projects 130,000–190,000 direct jobs (Context.ph, July 23, 2026), and reports of the SONA cite up to 190,000. The site now credits both. Still worth checking the PNA report or the SONA transcript for whether the President said the number himself.
 3. **18.75 GW**: the Inquirer (July 30, 2026) says 3 GW is about 16% of Luzon's grid capacity, but doesn't state 18.75 GW (that figure is 3 ÷ 0.16). Confirm it with MAP's source.
 4. **Philippines' join date**: the State Department announced it on April 16; at least one report says Rodolfo signed on April 17.
-5. **Not found online**: Responsible Statecraft (Tulfo, MAP), Cielo Magno in the Inquirer, Bernard Villegas in the Manila Times (search shows him as a Manila Bulletin/BusinessWorld columnist — check which outlet), the Rappler pieces ($70 billion, IBON, KMP, July Go quote, Nov 4), the Brussels Institute for Geopolitics piece, Manorama (June), Philstar (Aug 10), Tech Pilipinas, the Manila Times editorial (Oct 4), BusinessWorld (Oct 19, Nov 4), Inquirer (Nov 3), Daily Tribune (Nov 4), PNA, SCMP on the special arrangement, and the GMA pieces on Makabayan, Kalikasan, Rodolfo and BCDA energy/water.
-6. **"Resource platform" vs "satellite platform"**: still unclear which phrase came from Villegas and which from the UP study.
-7. **"Business groups" in the case for**: MAP is the only business group in the sources; it is under Middle ground.
-8. **Name expansions** to verify: BCDA = Bases Conversion and Development Authority; NUP = National Unity Party; DTI = Department of Trade and Industry; BOI = Board of Investments.
+5. **UP study**: a UP School of Economics paper reported by Manila Bulletin (June 4, 2026) makes a similar “do more than host” argument. Check whether it is the same study the Inquirer reported on Nov 3.
+6. **Not found online**: Responsible Statecraft (Tulfo, MAP), Cielo Magno in the Inquirer, Bernard Villegas in the Manila Times (search shows him as a Manila Bulletin/BusinessWorld columnist — check which outlet), the Rappler pieces ($70 billion, IBON, KMP, July Go quote, Nov 4), the Brussels Institute for Geopolitics piece, Manorama (June), Tech Pilipinas, the Manila Times editorial (Oct 4), BusinessWorld (Oct 19, Nov 4), Inquirer (Nov 3), Daily Tribune (Nov 4), PNA, SCMP on the special arrangement, and the GMA pieces on Makabayan, Kalikasan, Rodolfo and BCDA energy/water.
+7. **"Resource platform" vs "satellite platform"**: still unclear which phrase came from Villegas and which from the UP study.
+8. **"Business groups" in the case for**: MAP is the only business group in the sources; it is under Middle ground.
+9. **Name expansions** to verify: BCDA = Bases Conversion and Development Authority; NUP = National Unity Party; DTI = Department of Trade and Industry; BOI = Board of Investments.
