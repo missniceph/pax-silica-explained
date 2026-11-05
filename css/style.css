@@ -6,7 +6,7 @@
   --surface-2: #f1eee7;
   --ink: #1d1f24;
   --ink-2: #4a4f59;
-  --muted: #6f7480;
+  --muted: #5f6470;
   --line: #e2ddd2;
   --accent: #336b87;
   --accent-soft: #e3eef3;
@@ -204,7 +204,7 @@ section[id], [id^="theme-"], #questions, [id^="src-"], #case-for, #concerns, #to
 .facts { display: grid; gap: 10px; }
 .item { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
 .item p { margin: 6px 0 0; }
-.item-title { display: inline; font-size: 1.05rem; }
+.sec .item-title { display: inline; font-size: 1.05rem; margin: 0; }
 .item-projection { border-style: dashed; }
 
 /* ---------- timeline ---------- */
@@ -241,8 +241,8 @@ section[id], [id^="theme-"], #questions, [id^="src-"], #case-for, #concerns, #to
 
 .side-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin: 18px 0; position: sticky; top: calc(var(--head-h) + 4px); z-index: 5; background: var(--surface); }
 .side-tabs button { border: 0; background: var(--surface); padding: 10px 8px; font-weight: 700; font-size: .95rem; display: flex; gap: 8px; align-items: center; justify-content: center; min-height: 46px; color: var(--muted); }
-.side-tabs button[aria-selected="true"][data-side="pro"] { background: var(--pro-soft); color: var(--ink); box-shadow: inset 0 -3px 0 var(--pro); }
-.side-tabs button[aria-selected="true"][data-side="con"] { background: var(--con-soft); color: var(--ink); box-shadow: inset 0 -3px 0 var(--con); }
+.side-tabs button[aria-pressed="true"][data-side="pro"] { background: var(--pro-soft); color: var(--ink); box-shadow: inset 0 -3px 0 var(--pro); }
+.side-tabs button[aria-pressed="true"][data-side="con"] { background: var(--con-soft); color: var(--ink); box-shadow: inset 0 -3px 0 var(--con); }
 
 .sides-head { display: none; }
 .col-head { display: flex; gap: 10px; align-items: flex-start; padding: 14px 16px; border-radius: 12px; }
@@ -264,8 +264,6 @@ section[id], [id^="theme-"], #questions, [id^="src-"], #case-for, #concerns, #to
 .claim { background: var(--surface); border-radius: 10px; padding: 12px 14px; border: 1px solid var(--line); }
 .claim .who { display: inline; font-weight: 700; font-size: .95rem; margin: 0; }
 .claim .who + p { margin: 6px 0 0; font-size: .97rem; }
-.claim-empty { background: transparent; border-style: dashed; color: var(--ink-2); font-size: .92rem; font-style: italic; }
-.claim-empty p { margin: 0; }
 
 /* Phone: tabs choose a column */
 .sides[data-show="pro"] .theme-cols .col-con { display: none; }
@@ -298,7 +296,7 @@ section[id], [id^="theme-"], #questions, [id^="src-"], #case-for, #concerns, #to
 /* undecided */
 .undecided { display: grid; gap: 12px; }
 .open-item { display: flex; gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
-.open-item h4 { display: inline; font-size: 1.05rem; }
+.sec .open-item h3 { display: inline; font-size: 1.05rem; margin: 0; }
 .open-item p { margin: 6px 0 0; }
 .open-ico { flex: none; width: 30px; height: 30px; border-radius: 50%; border: 2px dashed var(--ph); color: var(--ph); display: grid; place-items: center; font-weight: 700; }
 .questions { padding-left: 1.3em; display: grid; gap: 8px; }
@@ -322,12 +320,13 @@ section[id], [id^="theme-"], #questions, [id^="src-"], #case-for, #concerns, #to
 .q-choices { display: grid; gap: 8px; margin-top: 6px; }
 .q-choice { text-align: left; border: 1px solid var(--line); background: var(--bg); border-radius: 10px; padding: 10px 14px; min-height: 44px; }
 .q-choice:not([disabled]):hover { border-color: var(--accent); }
-.q-choice[disabled] { cursor: default; opacity: .75; }
+.q-choice[disabled] { cursor: default; color: var(--ink-2); }
 .q-choice.is-right { border: 2px solid var(--ok); opacity: 1; }
 .q-choice.is-right::after { content: " ✓"; color: var(--ok); font-weight: 700; }
 .q-choice.is-wrong { border: 2px solid var(--no); opacity: 1; }
 .q-choice.is-wrong::after { content: " ✗"; color: var(--no); font-weight: 700; }
 .q-fb { margin: 10px 0 0; font-size: .95rem; }
+.q-fb:focus { outline: none; }
 .q-fb.ok strong { color: var(--ok); } .q-fb.no strong { color: var(--no); }
 .quiz-result { margin-top: 16px; }
 .score { font-family: var(--serif); font-size: 1.4rem; font-weight: 700; }

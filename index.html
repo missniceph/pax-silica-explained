@@ -4,12 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pax Silica, Explained</title>
-  <meta name="description" content="A balanced, bilingual (English/Filipino) plain-language explainer about Pax Silica and what it means for the Philippines. By @missniceph (Nice to Know).">
-  <meta property="og:title" content="Pax Silica, Explained">
-  <meta property="og:description" content="A balanced, bilingual plain-language explainer about Pax Silica and the Philippines. By @missniceph (Nice to Know).">
+  <meta name="description" content="What Pax Silica is and what it could mean for the Philippines — both sides, with sources, in plain English and Filipino. By @missniceph (Nice to Know).">
+  <!-- If the site lives at a different address, change SITE_URL below (3 places): https://missniceph.github.io/pax-silica-explained/ -->
+  <link rel="canonical" href="https://missniceph.github.io/pax-silica-explained/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nice to Know">
+  <meta property="og:title" content="Pax Silica, Explained">
+  <meta property="og:description" content="What it could mean for the Philippines — both sides, with sources, in plain English and Filipino.">
+  <meta property="og:url" content="https://missniceph.github.io/pax-silica-explained/">
+  <meta property="og:image" content="https://missniceph.github.io/pax-silica-explained/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pax Silica, Explained — a balanced explainer by Nice to Know">
+  <meta property="og:locale" content="en_PH">
+  <meta property="og:locale:alternate" content="fil_PH">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="color-scheme" content="light dark">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='6' y='6' width='20' height='20' rx='3' fill='%23336b87'/%3E%3Cpath d='M10 2v4M16 2v4M22 2v4M10 26v4M16 26v4M22 26v4M2 10h4M2 16h4M2 22h4M26 10h4M26 16h4M26 22h4' stroke='%23336b87' stroke-width='2'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
   <script>
     /* Apply saved theme before paint to avoid a flash */
@@ -166,9 +181,9 @@
       <p class="lede" data-i18n="sides_intro"></p>
       <p class="note" data-i18n="sides_uneven"></p>
 
-      <div class="side-tabs" role="tablist" data-i18n-aria="tabs_label">
-        <button type="button" role="tab" id="tab-for" aria-controls="sidesGrid" aria-selected="true" data-side="pro"><span class="mark mark-pro" aria-hidden="true"></span><span data-i18n="col_for"></span></button>
-        <button type="button" role="tab" id="tab-against" aria-controls="sidesGrid" aria-selected="false" data-side="con"><span class="mark mark-con" aria-hidden="true"></span><span data-i18n="col_against"></span></button>
+      <div class="side-tabs" role="group" data-i18n-aria="tabs_label">
+        <button type="button" aria-controls="sidesGrid" aria-pressed="true" data-side="pro"><span class="mark mark-pro" aria-hidden="true"></span><span data-i18n="col_for"></span></button>
+        <button type="button" aria-controls="sidesGrid" aria-pressed="false" data-side="con"><span class="mark mark-con" aria-hidden="true"></span><span data-i18n="col_against"></span></button>
       </div>
 
       <div class="sides" id="sidesGrid" data-show="pro">
@@ -229,7 +244,7 @@
   <footer class="foot">
     <div class="wrap">
       <p class="foot-position" data-i18n="foot_position"></p>
-      <p><span data-i18n="foot_made"></span> <a href="https://instagram.com/missniceph" rel="noopener" target="_blank">@missniceph</a> · Nice to Know</p>
+      <p><span data-i18n="foot_made"></span> <a href="https://instagram.com/missniceph" rel="noopener" target="_blank">@missniceph on Instagram</a> · Nice to Know</p>
       <p class="small"><span data-i18n="foot_update"></span> <span data-asof></span> · <span data-i18n="foot_privacy"></span></p>
     </div>
   </footer>
@@ -238,7 +253,7 @@
 
   <noscript><p class="wrap">Please turn on JavaScript to read this explainer. / Paki-on ang JavaScript para mabasa ang explainer na ito.</p></noscript>
 
-  <script src="js/content.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/content.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>

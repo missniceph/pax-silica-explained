@@ -6,6 +6,24 @@ A plain-language, balanced, bilingual (English / Filipino) explainer about Pax S
 - No tracking, no cookies, no ads, no outside fonts or scripts.
 - The only thing saved in the browser is the reader's own language and light/dark choice.
 
+## What's here and how to update it
+
+**What's here:** one web page (`index.html`) with 12 sections, in English and Filipino, light and dark mode. All the words live in `js/content.js`. Nothing else needs a server or a build step.
+
+**Most common updates:**
+
+| I want to… | Do this in `js/content.js` |
+|---|---|
+| Change the "As of" date | Edit `window.AS_OF` (both `en` and `fil`). |
+| Add a news event | Copy one entry in `window.TIMELINE` and change it. |
+| Add or fix a source | Edit `window.SOURCES`; cite it in text as `{{c:sourceId}}`. |
+| Fix a sentence or a translation | Find the sentence and edit its `en:` or `fil:` text. |
+| Update "What's still undecided" | Edit `window.UNDECIDED` and `window.QUESTIONS`. |
+
+After editing, open `index.html` in a browser to check, then commit. GitHub Pages updates the live site within a minute or two.
+
+**Share image and icons** are in `assets/`. The share image is `assets/og-image.png`, made from `assets/og-image.svg`. If you edit the SVG, export it again as a 1200 × 630 PNG. If the site's web address is not `https://missniceph.github.io/pax-silica-explained/`, change it in the three places marked in the `<head>` of `index.html` — otherwise the share preview won't show on Facebook/X/Messenger.
+
 ## Files
 
 | File | What it is |
@@ -14,6 +32,7 @@ A plain-language, balanced, bilingual (English / Filipino) explainer about Pax S
 | `js/content.js` | **All the words** on the site, in English and Filipino, plus the sources, timeline, glossary and quiz. Most edits happen here. |
 | `js/app.js` | Makes the page work (language switch, timeline, quiz, copy-link). You normally don't need to edit it. |
 | `css/style.css` | Colors and layout. |
+| `assets/` | Favicon, home-screen icon, and the social share image. |
 
 ## Put it online (GitHub Pages)
 
@@ -103,14 +122,27 @@ Headings, buttons and short paragraphs are under `window.UI`. Each one has a nam
 
 ## Items to confirm [confirm]
 
-These are shown honestly on the site (e.g., "date to be confirmed") until fixed in `js/content.js`:
+Last checked November 5, 2026, using web search only. The State Department, Wikipedia and US Embassy pages could not be opened directly from the build environment, so the items below still need a primary-source check.
 
-1. **Founding signatories** — the list was not in the fact base. The site says it is still being confirmed.
-2. **Source for membership dates and counts** (Qatar, UAE, India, Philippines as 13th, Norway as 15th, June 27 summit, 24 total) — no outlet was given. Shown as "Membership figures — source to be confirmed" (`members`).
-3. **Signatory count doesn't add up**: Norway was the 15th signatory; adding 10 at the June 27 summit gives 25, but the fact base says 24 total. Please check.
-4. **Missing dates** for: Wikipedia; Avasant; Inquirer (location, Cielo Magno); BusinessWorld (location); Daily Tribune (legal framework, 100,000+ jobs); SCMP; SunStar; Rappler ($70 billion, IBON, KMP); GMA (Rodolfo, BCDA energy/water, Makabayan Bloc, Kalikasan); MAP (energy figures); Manila Times (Bernard Villegas); Global Times; Responsible Statecraft (Tulfo, MAP); PNA (publication date of the SONA report).
-5. **Links (URLs)** for every source — none were provided. Add them in `window.SOURCES`.
-6. **"Resource platform" vs "satellite platform"** — the fact base doesn't say which phrase came from Bernard Villegas and which from the UP study, so the site attributes both phrases to both together.
-7. **Land and communities — critics' side**: the fact base has no specific, attributed critic statement on land or relocation. The site says so plainly in that column.
-8. **"Business groups" in the case for** — the only business group in the fact base is MAP, whose view ("Proceed, but Protected") is shown under Middle ground.
-9. **Name expansions** written from general knowledge, please verify: BCDA = Bases Conversion and Development Authority; NUP = National Unity Party; DTI = Department of Trade and Industry; BOI = Board of Investments; PNA, SCMP and NCIP are left as abbreviations.
+### Resolved or partly resolved (already updated on the site)
+
+- **Second summit date**: several reports (Digital Policy Alert, BHFS) say **June 25–26, 2026**, not June 27. The site now says June 25–26.
+- **The 10 June signatories**: Argentina, Chile, Costa Rica, El Salvador, the EU, Germany, Greece, Kazakhstan, the Netherlands and Panama. The full list is now shown.
+- **Founding signatories**: the ITIF timeline lists seven (US, UK, Japan, South Korea, Singapore, Israel, Australia). Other reports list them without the UK. The site shows the ITIF list and says reports differ.
+- **Membership sources**: India (10th, Manorama Yearbook), the Philippines (13th, The Star), Norway (15th, Mining.com) and the June summit now have sources. Qatar and UAE dates still need one.
+- **Land and communities, critics' side**: now filled with Aeta and farmer opposition (Daily Tribune, Aug 6, 2026) and residents interviewed by Radio Free Asia (Sept 22, 2026).
+- **Heydarian**: the argument first appeared in his own SCMP opinion piece (June 2026); Global Times (July 14, 2026) cited it. Both are now cited.
+- **More links added (Nov 5)**: Philstar (Aug 10), Context.ph (July 23) for the $70 billion target and the job range, and MAP's own July 30 statement for “Proceed, but Protected”.
+- **Dates and links added**: Avasant (May 2026), Global Times (July 14, 2026), Inquirer energy article (July 30, 2026), and links for Manila Bulletin (Apr 24, May 18), DZRH, SunStar, Wikipedia. Extra supporting links were added for Teodoro (GMA), Tulfo (GMA), MAP (Interaksyon, July 30, 2026), BCDA's rejection of a special arrangement (BusinessWorld) and HB 11758 (Daily Tribune, Oct 26, 2026).
+
+### Still open
+
+1. **Signatory count**: Norway was 15th; 10 more in June would make 25, but reports say 24. Later reports also mention Italy (July 31, 2026, called the 25th) and Paraguay (Oct 23, 2026). These are **not yet on the site** — confirm against state.gov/pax-silica before adding.
+2. **190,000 jobs** — *partly resolved.* BCDA projects 130,000–190,000 direct jobs (Context.ph, July 23, 2026), and reports of the SONA cite up to 190,000. The site now credits both. Still worth checking the PNA report or the SONA transcript for whether the President said the number himself.
+3. **18.75 GW**: the Inquirer (July 30, 2026) says 3 GW is about 16% of Luzon's grid capacity, but doesn't state 18.75 GW (that figure is 3 ÷ 0.16). Confirm it with MAP's source.
+4. **Philippines' join date**: the State Department announced it on April 16; at least one report says Rodolfo signed on April 17.
+5. **UP study**: a UP School of Economics paper reported by Manila Bulletin (June 4, 2026) makes a similar “do more than host” argument. Check whether it is the same study the Inquirer reported on Nov 3.
+6. **Not found online**: Responsible Statecraft (Tulfo, MAP), Cielo Magno in the Inquirer, Bernard Villegas in the Manila Times (search shows him as a Manila Bulletin/BusinessWorld columnist — check which outlet), the Rappler pieces ($70 billion, IBON, KMP, July Go quote, Nov 4), the Brussels Institute for Geopolitics piece, Manorama (June), Tech Pilipinas, the Manila Times editorial (Oct 4), BusinessWorld (Oct 19, Nov 4), Inquirer (Nov 3), Daily Tribune (Nov 4), PNA, SCMP on the special arrangement, and the GMA pieces on Makabayan, Kalikasan, Rodolfo and BCDA energy/water.
+7. **"Resource platform" vs "satellite platform"**: still unclear which phrase came from Villegas and which from the UP study.
+8. **"Business groups" in the case for**: MAP is the only business group in the sources; it is under Middle ground.
+9. **Name expansions** to verify: BCDA = Bases Conversion and Development Authority; NUP = National Unity Party; DTI = Department of Trade and Industry; BOI = Board of Investments.
