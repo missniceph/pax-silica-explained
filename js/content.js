@@ -81,30 +81,28 @@ window.UI = {
     fil: "Ano ito, ano ang puwedeng ibig sabihin nito para sa Pilipinas, at ano ang sinasabi ng iba't ibang panig — sa simpleng salita."
   },
   byline: { en: "By @missniceph · Nice to Know", fil: "Gawa ni @missniceph · Nice to Know" },
-  skip: { en: "Skip to content", fil: "Lumaktaw sa nilalaman" },
-  asof_label: { en: "As of", fil: "Hanggang" },
+  skip: { en: "Skip to content", fil: "Diretso sa nilalaman" },
+  asof_label: { en: "As of", fil: "Huling update:" },
   asof_rest: {
     en: "(Philippine time) — <strong>this is a developing story.</strong> Some details may change.",
-    fil: "(oras sa Pilipinas) — <strong>tuloy-tuloy pa ang balitang ito.</strong> Puwede pang magbago ang ilang detalye."
+    fil: "(oras sa Pilipinas) — <strong>umuusad pa ang balitang ito</strong>, kaya puwede pang magbago ang ilang detalye."
   },
-  asof_link: { en: "See what's still undecided →", fil: "Tingnan kung ano pa ang hindi napagpapasyahan →" },
-  lang_label: { en: "Language", fil: "Wika" },
+  asof_link: { en: "See what's still undecided →", fil: "Tingnan kung ano pa ang hindi tiyak →" },
   theme_label: { en: "Theme", fil: "Tema" },
   theme_auto: { en: "Auto", fil: "Auto" },
   theme_light: { en: "Light", fil: "Light" },
   theme_dark: { en: "Dark", fil: "Dark" },
   copy_link: { en: "Copy link", fil: "Kopyahin ang link" },
   copied: { en: "Link copied!", fil: "Nakopya na ang link!" },
-  contents: { en: "Contents", fil: "Nilalaman" },
 
   /* how-to-read key */
   key_title: { en: "How to read this explainer", fil: "Paano basahin ang explainer na ito" },
   key_fact: { en: "<b>What happened</b>, as reported by a named source.", fil: "<b>Ang nangyari</b>, ayon sa ulat ng isang pinangalanang source." },
-  key_claim: { en: "<b>What someone says or argues.</b> We always say who.", fil: "<b>Ang sinasabi o ipinaglalaban ng isang tao o grupo.</b> Lagi naming sinasabi kung sino." },
+  key_claim: { en: "<b>What someone says or argues.</b> We always say who.", fil: "<b>Ang sinasabi o ipinupunto ng isang tao o grupo.</b> Lagi naming binabanggit kung sino." },
   key_projection: { en: "<b>A forecast or target</b> — not a result yet.", fil: "<b>Hula o target</b> — hindi pa ito resulta." },
   key_sources: {
     en: "Small grey text in brackets shows the source (outlet and date). Tap it to jump to the Sources list.",
-    fil: "Ang maliit na abong text sa bracket ay ang source (outlet at petsa). I-tap ito para makita sa listahan ng Sources."
+    fil: "Ang maliit na gray na text sa loob ng bracket ang source (outlet at petsa). I-tap ito para mapunta sa listahan ng Sources."
   },
   badge_fact: { en: "Fact", fil: "Nangyari" },
   badge_claim: { en: "Claim", fil: "Sinasabi" },
@@ -130,7 +128,7 @@ window.UI = {
   h_basics: { en: "The basics: chips, minerals and supply chains", fil: "Ang basics: chips, mineral, at supply chain" },
   basics_intro: {
     en: "Before we get to Pax Silica, here are a few ideas that make the rest easier to follow. No economics degree needed.",
-    fil: "Bago tayo pumunta sa Pax Silica, heto muna ang ilang konsepto para mas madaling sundan ang lahat. Hindi kailangan ng degree sa economics."
+    fil: "Bago tayo dumako sa Pax Silica, heto muna ang ilang konsepto para mas madali mong masundan ang lahat. Hindi mo kailangan ng degree sa economics."
   },
   diag_supply_title: { en: "The AI supply chain, simplified", fil: "Ang AI supply chain, pinasimple" },
   diag_s1: { en: "Minerals", fil: "Mineral" },
@@ -162,7 +160,7 @@ window.UI = {
   h_ph: { en: "The Philippines and Pax Silica", fil: "Ang Pilipinas at ang Pax Silica" },
   ph_intro: {
     en: "When and how the Philippines joined, what is planned at New Clark City, and the rules officials say will apply.",
-    fil: "Kailan at paano sumali ang Pilipinas, ano ang plano sa New Clark City, at anong mga patakaran daw ang susundin ayon sa mga opisyal."
+    fil: "Kailan at paano sumali ang Pilipinas, ano ang plano sa New Clark City, at anong mga patakaran ang susundin, ayon sa mga opisyal."
   },
   ph_h_join: { en: "Joining", fil: "Pagsali" },
   ph_h_hub: { en: "The New Clark City hub", fil: "Ang hub sa New Clark City" },
@@ -189,7 +187,7 @@ window.UI = {
   h_timeline: { en: "Timeline: December 2025 → November 2026", fil: "Timeline: Disyembre 2025 → Nobyembre 2026" },
   timeline_intro: {
     en: "Tap a filter to focus. Tap an event to see more. Some dates are when something was <em>reported</em>, which we label.",
-    fil: "Pumili ng filter para mag-focus. I-tap ang isang event para makita ang detalye. May mga petsa na kung kailan ito <em>naiulat</em> — nakalagay namin iyon."
+    fil: "Pumili ng filter para mag-focus. I-tap ang isang event para makita ang detalye. Kapag ang petsa ay araw na <em>naiulat</em> ang balita, may tatak itong “Naiulat.”"
   },
   f_all: { en: "All", fil: "Lahat" },
   f_world: { en: "Global", fil: "Global" },
@@ -201,11 +199,11 @@ window.UI = {
   h_sides: { en: "The case for, and the concerns", fil: "Mga argumento pabor, at mga alalahanin" },
   sides_intro: {
     en: "Both sides are shown in the words of the people who said them, under the same five themes, in the same order. Everything in the two columns is a <strong>claim</strong> — a view or a prediction — not a settled fact. Grey boxes marked “Fact” give shared context.",
-    fil: "Makikita rito ang dalawang panig, sa sariling salita ng mga nagsabi, sa ilalim ng parehong limang tema at parehong pagkakasunod. Lahat ng nasa dalawang column ay <strong>sinasabi</strong> — pananaw o hula — hindi pa tiyak na katotohanan. Ang mga abong kahon na may “Nangyari” ay pinagsasaluhang konteksto."
+    fil: "Makikita rito ang dalawang panig, sa sariling salita ng mga nagsabi, sa parehong limang tema at parehong pagkakasunod. Lahat ng nasa dalawang column ay may tatak na <strong>Sinasabi</strong> — pananaw o hula ito, hindi pa napatutunayang katotohanan. Ang mga gray na kahon na may tatak na “Nangyari” ay konteksto para sa dalawang panig."
   },
   sides_uneven: {
     en: "Where one column has fewer points, it is because our sources contain fewer attributed statements on that theme — not because one side matters more.",
-    fil: "Kung mas kaunti ang laman ng isang column, ibig sabihin lang ay mas kaunti ang naka-attribute na pahayag sa aming mga source para sa temang iyon — hindi dahil mas mahalaga ang isang panig."
+    fil: "Kung mas kaunti ang laman ng isang column, ibig sabihin lang nito ay mas kaunti ang pahayag na may malinaw na pinanggalingan sa aming mga source para sa temang iyon — hindi dahil mas mahalaga ang isang panig."
   },
   col_for: { en: "The case for", fil: "Mga argumento pabor" },
   col_for_sub: { en: "As argued by the government and supporters", fil: "Ayon sa gobyerno at mga sumusuporta" },
@@ -225,7 +223,7 @@ window.UI = {
   },
 
   /* 9. undecided */
-  h_undecided: { en: "What's still undecided", fil: "Ano pa ang hindi napagpapasyahan" },
+  h_undecided: { en: "What's still undecided", fil: "Ano pa ang hindi tiyak" },
   undecided_intro: {
     en: "As of {ASOF}, these are the open items, based on the latest reports in our sources.",
     fil: "Hanggang {ASOF}, ito ang mga bukas pang usapin, batay sa pinakabagong ulat sa aming mga source."
@@ -246,15 +244,17 @@ window.UI = {
   glossary_none: { en: "No matching term.", fil: "Walang tugmang salita." },
 
   /* 11. quiz */
-  h_quiz: { en: "Check your understanding", fil: "Subukan ang iyong pag-unawa" },
+  h_quiz: { en: "Check your understanding", fil: "Gets mo na ba? Subukan natin" },
   quiz_intro: {
     en: "Six quick questions, all based on the facts above. No opinion questions.",
-    fil: "Anim na mabilis na tanong, lahat batay sa mga nangyari sa itaas. Walang tanong tungkol sa opinyon."
+    fil: "Anim na mabilis na tanong, lahat tungkol sa mga nangyari na nabasa mo sa itaas. Walang tanong tungkol sa opinyon."
   },
   quiz_correct: { en: "Correct!", fil: "Tama!" },
-  quiz_wrong: { en: "Not quite.", fil: "Hindi ito." },
-  quiz_score: { en: "Your score: {S} out of {T}", fil: "Ang iskor mo: {S} sa {T}" },
-  quiz_reset: { en: "Try again", fil: "Ulitin" },
+  quiz_wrong: { en: "Not quite.", fil: "Hindi tama." },
+  quiz_sr_right: { en: "correct answer", fil: "tamang sagot" },
+  quiz_sr_wrong: { en: "your answer, incorrect", fil: "sagot mo, mali" },
+  quiz_score: { en: "Your score: {S} out of {T}", fil: "Nakakuha ka ng {S} sa {T}" },
+  quiz_reset: { en: "Try again", fil: "Subukan ulit" },
 
   /* 12. sources */
   h_sources: { en: "Sources", fil: "Sources" },
@@ -532,8 +532,8 @@ window.TIMELINE = [
     title: { en: "Second summit: 24 signatories", fil: "Ikalawang summit: 24 na ang pumirma" },
     en: "10 signatories are added in Washington, D.C.: Argentina, Chile, Costa Rica, El Salvador, the EU, Germany, Greece, Kazakhstan, the Netherlands and Panama. {{c:dpa,bhfs}}",
     fil: "10 ang nadagdag sa Washington, D.C.: Argentina, Chile, Costa Rica, El Salvador, EU, Germany, Greece, Kazakhstan, Netherlands at Panama. {{c:dpa,bhfs}}" },
-  { sort: "2026-07-02", cat: "debate",
-    date: { en: "July 2026", fil: "Hulyo 2026" },
+  { sort: "2026-07-30", cat: "debate",
+    date: { en: "July 30, 2026", fil: "Hulyo 30, 2026" },
     title: { en: "Projected power demand reported: 3 GW", fil: "Naiulat ang inaasahang demand sa kuryente: 3 GW" },
     en: "That is about 16% of Luzon's grid capacity of 18.75 GW. {{c:inq07,map}}",
     fil: "Mga 16% iyan ng kapasidad ng Luzon grid na 18.75 GW. {{c:inq07,map}}" },
@@ -684,7 +684,7 @@ window.THEMES = [
         fil: "Nagbabala na baka maging “resource platform” o “satellite platform” lang ang Pilipinas, kung saan nananatili sa ibang bansa ang mga pangunahing gawain. {{c:manilatimes,inq1103}}" },
       { who: { en: "IBON Foundation", fil: "IBON Foundation" },
         en: "Notes that decades of low-value foreign investment did not industrialize the Philippines. {{c:rappler}}",
-        fil: "Ipinunto na ilang dekada ng mababang-halagang foreign investment ang hindi nagpa-industriyalisa sa Pilipinas. {{c:rappler}}" },
+        fil: "Ipinunto na ilang dekada nang pumapasok ang foreign investment na mababa ang halaga, pero hindi pa rin naging industriyalisado ang Pilipinas. {{c:rappler}}" },
       { who: { en: "Economist Cielo Magno", fil: "Ekonomistang si Cielo Magno" },
         en: "Warns the Philippines could trade one dependence for another. {{c:inquirer}}",
         fil: "Nagbabala na baka ipagpalit lang ng Pilipinas ang isang pagdepende sa isa pang pagdepende. {{c:inquirer}}" }
@@ -715,7 +715,7 @@ window.THEMES = [
         fil: "Tinawag itong “sellout” (pagbebenta ng bayan) at iniuugnay sa alalahanin tungkol sa militarisasyon. {{c:rappler}}" },
       { who: { en: "Analyst Richard Heydarian (SCMP opinion piece, also cited by Global Times — Chinese state media)", fil: "Analyst na si Richard Heydarian (opinion piece sa SCMP, binanggit din ng Global Times — state media ng China)" },
         en: "Argued it rests on speculative promises and risks riling China. {{c:scmpheyd,globaltimes}}",
-        fil: "Sinabing nakasandal ito sa mga pangakong haka-haka lang at puwedeng ikagalit ng China. {{c:scmpheyd,globaltimes}}" },
+        fil: "Sinabing nakasalalay ito sa mga pangakong hindi pa tiyak, at puwede itong ikagalit ng China. {{c:scmpheyd,globaltimes}}" },
       { who: { en: "Analyst Dan Steinbock", fil: "Analyst na si Dan Steinbock" },
         en: "Called it a potential “risk multiplier.” {{c:avasant}}",
         fil: "Tinawag itong posibleng “risk multiplier” (nagpaparami ng panganib). {{c:avasant}}" },
@@ -746,7 +746,7 @@ window.THEMES = [
         fil: "Nanawagan ng imbestigasyon sa isang umano'y draft na framework. {{c:dzrh}}" },
       { who: { en: "Senator Raffy Tulfo", fil: "Senador Raffy Tulfo" },
         en: "Questioned the government's capacity to regulate foreign projects. {{c:rs,gmatulfo}}",
-        fil: "Kinuwestiyon ang kakayahan ng gobyerno na i-regulate ang mga proyektong dayuhan. {{c:rs,gmatulfo}}" }
+        fil: "Kinuwestiyon kung kaya ba ng gobyerno na i-regulate ang mga proyekto ng mga dayuhan. {{c:rs,gmatulfo}}" }
     ]
   }
 ];

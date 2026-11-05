@@ -6,6 +6,24 @@ A plain-language, balanced, bilingual (English / Filipino) explainer about Pax S
 - No tracking, no cookies, no ads, no outside fonts or scripts.
 - The only thing saved in the browser is the reader's own language and light/dark choice.
 
+## What's here and how to update it
+
+**What's here:** one web page (`index.html`) with 12 sections, in English and Filipino, light and dark mode. All the words live in `js/content.js`. Nothing else needs a server or a build step.
+
+**Most common updates:**
+
+| I want to… | Do this in `js/content.js` |
+|---|---|
+| Change the "As of" date | Edit `window.AS_OF` (both `en` and `fil`). |
+| Add a news event | Copy one entry in `window.TIMELINE` and change it. |
+| Add or fix a source | Edit `window.SOURCES`; cite it in text as `{{c:sourceId}}`. |
+| Fix a sentence or a translation | Find the sentence and edit its `en:` or `fil:` text. |
+| Update "What's still undecided" | Edit `window.UNDECIDED` and `window.QUESTIONS`. |
+
+After editing, open `index.html` in a browser to check, then commit. GitHub Pages updates the live site within a minute or two.
+
+**Share image and icons** are in `assets/`. The share image is `assets/og-image.png`, made from `assets/og-image.svg`. If you edit the SVG, export it again as a 1200 × 630 PNG. If the site's web address is not `https://missniceph.github.io/pax-silica-explained/`, change it in the three places marked in the `<head>` of `index.html` — otherwise the share preview won't show on Facebook/X/Messenger.
+
 ## Files
 
 | File | What it is |
@@ -14,6 +32,7 @@ A plain-language, balanced, bilingual (English / Filipino) explainer about Pax S
 | `js/content.js` | **All the words** on the site, in English and Filipino, plus the sources, timeline, glossary and quiz. Most edits happen here. |
 | `js/app.js` | Makes the page work (language switch, timeline, quiz, copy-link). You normally don't need to edit it. |
 | `css/style.css` | Colors and layout. |
+| `assets/` | Favicon, home-screen icon, and the social share image. |
 
 ## Put it online (GitHub Pages)
 

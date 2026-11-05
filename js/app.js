@@ -55,12 +55,11 @@
   function itemHTML(it) {
     var type = it.type || "fact";
     return '<div class="item item-' + type + '">' + badge(type) +
-      (it.title ? '<h4 class="item-title">' + esc(L(it.title)) + "</h4>" : "") +
+      (it.title ? '<h3 class="item-title">' + esc(L(it.title)) + "</h3>" : "") +
       "<p>" + fmt(L(it)) + "</p></div>";
   }
 
   function claimHTML(c) {
-    if (c.empty) return '<div class="claim claim-empty"><p>' + fmt(L(c)) + "</p></div>";
     var type = c.type || "claim";
     return '<div class="claim">' + badge(type) +
       '<p class="who">' + esc(L(c.who)) + "</p><p>" + fmt(L(c)) + "</p></div>";
@@ -143,7 +142,7 @@
   R.undecided = function () {
     return window.UNDECIDED.map(function (u) {
       return '<div class="open-item"><span class="open-ico" aria-hidden="true">?</span><div>' + badge("fact") +
-        "<h4>" + esc(L(u.title)) + "</h4><p>" + fmt(L(u)) + "</p></div></div>";
+        "<h3>" + esc(L(u.title)) + "</h3><p>" + fmt(L(u)) + "</p></div></div>";
     }).join("");
   };
 
@@ -167,10 +166,13 @@
         var cls = "q-choice";
         if (answered && ci === q.answer) cls += " is-right";
         if (answered && ci === chosen && ci !== q.answer) cls += " is-wrong";
-        return '<button type="button" class="' + cls + '" data-q="' + qi + '" data-c="' + ci + '"' + (answered ? " disabled" : "") + ">" + esc(L(c)) + "</button>";
+        var sr = "";
+        if (answered && ci === q.answer) sr = ' <span class="sr">(' + esc(t("quiz_sr_right")) + ")</span>";
+        else if (answered && ci === chosen) sr = ' <span class="sr">(' + esc(t("quiz_sr_wrong")) + ")</span>";
+        return '<button type="button" class="' + cls + '" data-q="' + qi + '" data-c="' + ci + '"' + (answered ? " disabled" : "") + ">" + esc(L(c)) + sr + "</button>";
       }).join("");
       var fb = answered
-        ? '<p class="q-fb ' + (chosen === q.answer ? "ok" : "no") + '"><strong>' + esc(t(chosen === q.answer ? "quiz_correct" : "quiz_wrong")) + "</strong> " + fmt(L(q.why)) + "</p>"
+        ? '<p class="q-fb ' + (chosen === q.answer ? "ok" : "no") + '" tabindex="-1" id="qfb-' + qi + '"><strong>' + esc(t(chosen === q.answer ? "quiz_correct" : "quiz_wrong")) + "</strong> " + fmt(L(q.why)) + "</p>"
         : "";
       return '<fieldset class="q"><legend><span class="q-num">' + (qi + 1) + "</span>" + esc(L(q.q)) + "</legend>" +
         '<div class="q-choices">' + btns + "</div>" + fb + "</fieldset>";
@@ -361,7 +363,7 @@
     if ((el = e.target.closest("[data-side]"))) {
       state.side = el.getAttribute("data-side");
       document.getElementById("sidesGrid").setAttribute("data-show", state.side);
-      document.querySelectorAll("[data-side]").forEach(function (b) { b.setAttribute("aria-selected", String(b === el)); });
+      document.querySelectorAll("[data-side]").forEach(function (b) { b.setAttribute("aria-pressed", String(b === el)); });
       return;
     }
     if ((el = e.target.closest(".q-choice"))) {
@@ -372,6 +374,8 @@
       currentSection = "quiz";
       holder.innerHTML = R.quiz();
       updateQuizResult();
+      var fb = document.getElementById("qfb-" + qi);
+      if (fb) fb.focus({ preventScroll: true });
       return;
     }
     if ((el = e.target.closest("#quizReset"))) {
@@ -379,17 +383,11 @@
       currentSection = "quiz";
       document.querySelector('[data-render="quiz"]').innerHTML = R.quiz();
       updateQuizResult();
-      document.getElementById("quiz").scrollIntoView({ behavior: "smooth" });
+      var firstChoice = document.querySelector(".q-choice");
+      if (firstChoice) firstChoice.focus({ preventScroll: true });
+      document.getElementById("quiz").scrollIntoView();
       return;
     }
-  });
-
-  // keyboard: arrow keys move between the two side tabs
-  document.querySelector(".side-tabs").addEventListener("keydown", function (e) {
-    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
-    var tabs = this.querySelectorAll("[role=tab]");
-    var next = tabs[0].getAttribute("aria-selected") === "true" ? tabs[1] : tabs[0];
-    next.focus(); next.click();
   });
 
   document.getElementById("glossSearch").addEventListener("input", applyGlossFilter);
@@ -407,6 +405,10 @@
   renderAll();
   if (location.hash.length > 1) {
     var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    if (target) setTimeout(function () { target.scrollIntoView(); }, 0);
+    if (target) {
+      var jump = function () { target.scrollIntoView({ behavior: "instant", block: "start" }); };
+      requestAnimationFrame(jump);
+      window.addEventListener("load", jump, { once: true });
+    }
   }
 })();
